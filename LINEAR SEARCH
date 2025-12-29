@@ -1,0 +1,18 @@
+LINEAR SEARCH ALGORITHM
+# DECLARE nameData : ARRAY [0 : 6] OF STRING
+nameData = ["Farjad", "Khadija", "Ali", "Mazin", "Taha", "Fakhir", "Zainab"]
+
+def linearSearch(name):
+    #Declare x : INTEGER
+    for x in range(0, 7):
+        if nameData[x] == name:
+            print(nameData[x]," at index ",x)
+            return True
+    return False
+# DECLARE username : STRING
+# DECLARE temp : BOOLEAN
+username = input("Enter the name: ")
+if linearSearch(username) == True:
+    print("Name found")
+else:
+    print("Not found.")
